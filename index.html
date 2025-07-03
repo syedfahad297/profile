@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proflie</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(202, 200, 195);
+            font-family: "Roboto", sans-serif;
+
+        }
+        .profile{
+            width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .top {
+            height: 250px;
+            background-image: url("./assets/img/bg.jpg");
+            background-size: cover;
+            border-radius: 15px;
+        }
+         .profile_img {
+            position: relative;
+            top: -70px;
+        }
+        .profile_img img {
+            width: 130px;
+            height: 130px;
+            border-radius: 100%;
+            display: block;
+            border: 5px solid rgb(255, 255, 255);
+        }
+        .online {
+            display: inline-block;
+            background-color: rgb(35, 250, 7);
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            position: absolute;
+            right: 10px;
+            bottom:10px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .bottom-left {
+            display: flex;
+            gap: 30px;
+        }
+        .info p,
+        .info h3 {
+            margin-bottom: 10px;
+            line-height: 25px;
+        }
+        .tags {
+            display: flex;
+            gap: 10px;
+
+        }
+        .tags > div {
+            background-color: rgb(194, 191, 191);
+            padding: 5px 15px;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+        .bottom-right .icon {
+            background-color: rgb(12, 110, 238);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .bottom-right .icon i {
+            margin-right: 6px;
+        }
+        
+</style>
+<body>
+    <div class="profile">
+        <div class="top">
+        </div>
+        <div class="bottom">
+            <div class="bottom-left">
+                <div class="profile_img">
+                    <img src="./dp.jpg" />
+                    <span class="online"></span>
+                </div>
+                <div class="info">
+                    <h3>Syed Fahad Ameen</h3>
+                    <p>Engineer at bb industry <br >
+                    New york united states
+                    </p>
+                    <div class="tags">
+                        <div>UX Research</div>
+                        <div>CX Strategy</div>
+                        <div>Project Management</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div class="icon">
+                    <i class="ri-send-plane-line"></i> <span>Send Message</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
